@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');    
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh;
+  align-content: center;
+  align-items: center;
+  background-color: rgba(34, 49, 52, 0.9);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.profile img {
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 115px;
+  width: 115px;
+  margin-top: 50px;
+  transition: all 1.5s ease;
+  overflow: hidden; 
+}
+
+.profile img:hover{
+  transform: scale(2.0);
+}
+
+.content {
+  line-height: 1.7em;
+  padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 50px;
+}
+
+.line {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.line-number {
+  font-family: 'Fira Code', monospace;
+  opacity: 0.5;
+  padding-right: 30px;
+}
+
+
+.line-content {
+  letter-spacing: 2px;
+}
+
+.line-content mark {
+  background: transparent;
+  color: #ffccaa;
+  letter-spacing: 3px;
+}
+.social-med{
+  padding-top: 1px; 
+  padding-bottom: 50px;
+ 
+}
+.social-med i{
+   color: #ffffff;
+}
+
+.social-med a {
+  color: #ffffff;
+  opacity: 0.1;
+}
+
+.social-med a:hover {
+  opacity: 1;
+  transition: 1.5s;
+}
+
+@media screen and (max-width: 670px) {
+  .container {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+
